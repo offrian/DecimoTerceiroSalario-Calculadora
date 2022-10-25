@@ -88,14 +88,14 @@ function calculaSalario() {
     }).format(valordependete);
     var select = document.getElementById("parcela").value;
     if ( select == 2) {
-        text = "Seu 13º será pago em duas parcelas, " + "a primeira parcela no valor de: " + dinheiroformatado2 + " e a segunda parcela no valor de: " + dinheiroformatado3 + " somando o valor total é: " + dinheiroformatado + "!";
+        text = "Seu 13º será pago em duas parcelas, " + "1ª parcela: " + dinheiroformatado2 + " 2ª parcela: " + dinheiroformatado3 + " valor total: " + dinheiroformatado + "!";
     } else if (select == 1) {
-        text = "Seu decimo terceiro salario " +  dinheiroformatado + "";
+        text = "Seu décimo terceiro salário: " +  dinheiroformatado + "";
     }else if (select <= 3) {
-        text = "Erro numero de parcelas inexistente";
+        text = "Erro número de parcelas inexistente!!!";
     }
-    inssresult = "Taxa INSS a pagar: " + dinheiroformatado4 + "";
-    irpfresult = "Taxa IRPF a pagar: " + dinheiroformatado5 + "";
+    inssresult = "Taxa INSS: " + dinheiroformatado4 + "";
+    irpfresult = "Taxa IRPF: " + dinheiroformatado5 + "";
     dependenteresult = "Quantia correspondente aos dependentes: " + dinheiroformatado6 + "";
     document.getElementById("result").innerHTML = text;
     document.getElementById("resultinss").innerHTML = inssresult;
