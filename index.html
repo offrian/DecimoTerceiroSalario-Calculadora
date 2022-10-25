@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title>Calculadora 13º</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <br>
+    <div class="card h-50% w-15%">
+        <div class="d-sm-flex p-2 justify-content-around">
+            <fieldset enable>
+                <br>
+                <legend align="center">Cálculo do 13º Salário 2022</legend>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        
+                        <input type="number" class="form-control" placeholder="Valor do salário bruto:" id="valor" value="">
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-select" aria-label="Default select example" id="quantidade" value="">
+                            <option selected>Meses Trabalhado</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                          </select>
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-select" aria-label="Default select example" id="parcela" value="">
+                            <option selected>Quantidade de parcela</option>
+                            <option value="1">Parcela unica</option>
+                            <option value="2">Duas parcelas</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-select" aria-label="Default select example" id="dependenteqt" value="">
+                            <option selected>Quantidade dependentes</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                    </form>
+                    </div>
+        </div>
+        <div align="center">
+            <button id="calcular" onclick="calculaSalario()" class="btn btn-primary">Calcular salário</button>
+        </div>
+        <br>
+        <div>
+            <table border="1" align="center" cellpadding="6" cellspacing="0">
+                <tr>
+                    <th> &nbsp; &nbsp; &nbsp; &nbsp; INSS VALOR DESCONTADO &nbsp; &nbsp; &nbsp; &nbsp; </th>
+                    <th> &nbsp; &nbsp; &nbsp; &nbsp; IRPF VALOR DESCONTADO &nbsp; &nbsp; &nbsp; &nbsp; </th>
+                </tr>
+                <tr>
+                    <td id="resultinss"></td>
+                    <td id="resultirpf"></td>
+                </tr>
+                <tr>
+                    <td id="result" colspan="2"></td>
+                </tr>
+                <tr>
+                    <td id="valordependete" colspan="2"></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+    </div>
+    <h6 id="result"></h6>
+    <h6 id="resultinss"></h6>
+    <h6 id="resultirpf"></h6>
+    <h6 id="valordependete"></h6>
+    </fieldset>
+    </div>
+         <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(255, 255, 255, 0.87);">
+         2022 - Rian Nascimento.
+          <a class="text-dark" href=></a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+</body>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="calculadora.js"></script>
+
+</html>
