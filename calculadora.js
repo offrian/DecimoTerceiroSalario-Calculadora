@@ -33,7 +33,7 @@ function calculaSalario() {
         irpfaqui = 0.075
     } else if (valorinss <= 3751.05) {
         irpfaqui = 0.15
-    } else if (valorinss <= 4466.68) {
+    } else if (valorinss <= 4464.68) {
         irpfaqui = 0.225
     } else if (valorinss >= 4664.69) {
         irpfaqui = 0.275
@@ -47,7 +47,7 @@ function calculaSalario() {
         desconto = 142.80
     } else if (valorinss <= 3751.05) {
         desconto = 354.80
-    } else if (valorinss <= 4466.68) {
+    } else if (valorinss <= 4464.68) {
         desconto = 636.13
     } else if (valorinss >= 4664.69) {
         desconto = 869.36
